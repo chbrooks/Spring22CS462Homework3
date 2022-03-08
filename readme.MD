@@ -7,12 +7,12 @@ to implement.
 
 In order to complete this assignment, you will need NLTK (https://www.nltk.org) (it’s in conda, if you use that).
 
-We’ll be reading from the NLTK book, which can be found here: https://www.nltk.org/book/ (Links to an external site.)
+We’ll be reading from the NLTK book, which can be found here: https://www.nltk.org/book/
 
 To submit: add code and documents to your GitHub repo for this assignment, along with a submission.py file that  runs your code. There are several places where you're asked to  measure or compare performance.
 Please add a document called HW3.pdf to  your repo containing the answers to these questions.
 
-Part 1.  Getting warmed up. These tasks are intended to get you started with NLTK. 
+#### Part 1.  Getting warmed up. These tasks are intended to get you started with NLTK. 
 
 (5 points) Please read chapter 1, sections 1 and 3. Please feel free to skim the parts about Python as necessary. Choose one of the intro texts and compute its lexical diversity.
 
@@ -25,7 +25,7 @@ Part 1.  Getting warmed up. These tasks are intended to get you started with NLT
 
 (10 points) Next, create a ConditionalFreqDist (CFD), where the conditions are the fileids in the Gutenberg corpus and the events are the words in Gutenberg.words(), filtered as above to convert to lower case, and remove stop words and non-words.
 
-Part 2: Document clustering. 
+#### Part 2: Document clustering. (30 points)
 
 In this part, you'll implement the k-means algorithm and use it to classify documents.
 
@@ -42,7 +42,7 @@ most common category, and then count the fraction of articles in that category.
 
 Compare your performance to that of the [nltk.cluster](https://www.nltk.org/api/nltk.cluster.html) package. 
 
-Part 3: Supervised learning with Naive Bayes.
+#### Part 3: Supervised learning with Naive Bayes. (30 points)
 
 Clustering is an *unsupervised* algorithm. It constructs a hypothesis using only the relationships within the data.
 
@@ -66,9 +66,11 @@ Split your articles into five bins, arranged randomly. for i = 1 to 5:
 train on 4 bins
 test on the 5th bin. What percentage of the articles were classified correctly?
 Average these five percentages to get an average accuracy. Report this in your document.
-Also, compare your algorithm's performance to the [Naive Bayes classifier included with NLTK:](https://www.nltk.org/api/nltk.classify.naivebayes.html)
+Also, compare your algorithm's performance to the [Naive Bayes classifier included with NLTK.](https://www.nltk.org/api/nltk.classify.naivebayes.html)
 
-Part 4: CS686 students only: Please read [this article](https://thegradient.pub/machine-learning-wont-solve-the-natural-language-understanding-challenge/)
+#### Part 4: CS686 students only: 
+
+Please read [this article](https://thegradient.pub/machine-learning-wont-solve-the-natural-language-understanding-challenge/)
 And answer the following questions:
 - According to the author, what is the difference between natural language processing and natural language understanding?
 - Why  does the author feel that data-driven approaches are not suitable for NLU?
